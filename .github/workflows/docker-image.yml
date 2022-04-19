@@ -21,6 +21,6 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag prospecta/bitnami-spark-livy:$(date +%s)
+      run: docker build . --file Dockerfile --tag prospecta/bitnami-spark-livy:3.2.1
     - name: Docker push
-      run: docker push ${{secrets.DOCKER_USER}}/bitnami-spark-livy
+      run: docker push ${{secrets.DOCKER_USER}}/bitnami-spark-livy:3.2.1
