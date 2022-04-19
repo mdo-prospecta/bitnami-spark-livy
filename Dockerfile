@@ -1,6 +1,6 @@
 FROM bitnami/spark:3.2.1
 # ----------
-# Build Livy
+# Install Livy
 # ----------
 ENV LIVY_BUILD_VERSION 0.7.1-incubating
 ENV LIVY_APP_PATH /opt/bitnami/livy
